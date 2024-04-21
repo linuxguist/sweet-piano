@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Sweet Piano</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+
+<!-- 
+Inspired by Wes Bos' JS Drum Kit - from Javascript30 (www.javascript30.com)
+
+Also special thanks to freesound.org and neatonk ( https://www.freesound.org/people/neatonk/ ) for the sound pack! 
+-->
+
+  <div class="instructions">Press the Numeric Keypad Keys on your keyboard to play. Also, can attach an USB Keyboard for getting the Numeric Keypad.</div>
+  <div class="keys">
+    <div class="container">
+    <div class="black-keys">
+      <div data-key="96" class="bkey" id="Fs3">
+        <bbd>0</bbd>
+        
+      </div>
+      <div data-key="97" class="bkey" id="Gs3">
+        <bbd>1</bbd>
+        
+      </div>
+      <div data-key="98" class="bkey" id="As3">
+        <bbd>2</bbd>
+        
+      </div>
+      <div data-key="99" class="bkey" id="Cs4">
+        <bbd>3</bbd>
+        
+      </div>
+      <div data-key="100" class="bkey" id="Ds4">
+        <bbd>4</bbd>
+        
+      </div>
+      <div data-key="101" class="bkey" id="Fs4">
+        <bbd>5</bbd>
+        
+      </div>
+      <div data-key="102" class="bkey" id="Gs4">
+        <bbd>6</bbd>
+        
+      </div>
+      <div data-key="103" class="bkey" id="As4">
+        <bbd>7</bbd>
+        
+      </div>
+    </div>
+    <div class="white-keys">
+      <div data-key="104" class="wkey">
+        <kbd>8</kbd>
+        
+      </div>
+      <div data-key="105" class="wkey">
+        <kbd>9</kbd>
+        
+      </div>
+      <div data-key="110" class="wkey">
+        <kbd>.</kbd>
+        
+      </div>
+      <div data-key="13" class="wkey">
+        <kbd>Enter</kbd>
+        
+      </div>
+      <div data-key="107" class="wkey">
+        <kbd>+</kbd>
+        
+      </div>
+      <div data-key="109" class="wkey">
+        <kbd>-</kbd>
+        
+      </div>
+      <div data-key="106" class="wkey">
+        <kbd>*</kbd>
+        
+      </div>
+      <div data-key="38" class="wkey">
+        <kbd>Up Arrow</kbd>
+        
+      </div>
+      <div data-key="12" class="wkey">
+        <kbd>Number Lock</kbd>
+        
+      </div>
+      <div data-key="37" class="wkey">
+        <kbd>Left Arrow</kbd>
+        
+      </div>
+      <div data-key="40" class="wkey">
+        <kbd>Down Arrow</kbd>
+        
+      </div>
+      <div data-key="39" class="wkey">
+        <kbd>Right Arrow</kbd>
+        
+      </div>
+    </div>
+    </div>
+  </div>
+  <audio preload="auto" data-key="104" src="sounds/f3.mp3"></audio>
+  <audio preload="auto" data-key="105" src="sounds/g3.mp3"></audio>
+  <audio preload="auto" data-key="96" src="sounds/fs3.mp3"></audio>
+  <audio preload="auto" data-key="110" src="sounds/a3.mp3"></audio>
+  <audio preload="auto" data-key="97" src="sounds/gs3.mp3"></audio>
+  <audio preload="auto" data-key="13" src="sounds/b3.mp3"></audio>
+  <audio preload="auto" data-key="107" src="sounds/c4.mp3"></audio>
+  <audio preload="auto" data-key="98" src="sounds/as3.mp3"></audio>
+  <audio preload="auto" data-key="109" src="sounds/d4.mp3"></audio>
+  <audio preload="auto" data-key="99" src="sounds/cs4.mp3"></audio>
+  <audio preload="auto" data-key="106" src="sounds/e4.mp3"></audio>
+  <audio preload="auto" data-key="100" src="sounds/ds4.mp3"></audio>
+  <audio preload="auto" data-key="38" src="sounds/f4.mp3"></audio>
+  <audio preload="auto" data-key="12" src="sounds/g4.mp3"></audio>
+  <audio preload="auto" data-key="101" src="sounds/fs4.mp3"></audio>
+  <audio preload="auto" data-key="102" src="sounds/gs4.mp3"></audio>
+  <audio preload="auto" data-key="37" src="sounds/a4.mp3"></audio>
+  <audio preload="auto" data-key="103" src="sounds/as4.mp3"></audio>
+  <audio preload="auto" data-key="40" src="sounds/b4.mp3"></audio>
+  <audio preload="auto" data-key="39" src="sounds/c5.mp3"></audio>
+
+  <script  src="./script.js"></script>
+
+  <!--
+  <script  src="./jquery-3.5.1.min.js"></script>
+  -->
+
+</body>
+</html>
