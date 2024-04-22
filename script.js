@@ -10,11 +10,16 @@ $(window).keydown(function (event) {
 
 function playSound(e) {
 
+/*
     if (event.keyCode == 111) {
         event.preventDefault();
+        document.getElementById('111').play();
         return false;
     }
+*/    
   
+  event.preventDefault();
+
   const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
   const curKey = document.querySelector(`.wkey[data-key="${e.keyCode}"],.bkey[data-key="${e.keyCode}"]`);
 
