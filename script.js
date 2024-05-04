@@ -20,12 +20,13 @@ function playSound(e) {
   
   event.preventDefault();
 
-  const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
-  const curKey = document.querySelector(`.wkey[data-key="${e.keyCode}"],.bkey[data-key="${e.keyCode}"]`);
+  const audio = document.querySelector(`audio[data-key="${e.key}"]`);
+  const curKey = document.querySelector(`.wkey[data-key="${e.key}"],.bkey[data-key="${e.key}"]`);
 
   if (!audio) return; // stop the function from running altogether 
   audio.currentTime = 0; // rewind to the start
 
+  audio.pause();
   audio.play();
   curKey.classList.add('playing');
 }
